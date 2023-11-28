@@ -3,10 +3,10 @@ Mi producto sirve para ayudar a los usuarios a llevar un control de la lista de 
 
 # Funcionalidades
 
-## Agregar nuevas tareas
-## Seleccionar tareas realizadas
-## Editar tareas
-## Eliminar tareas realizadas 
+### Agregar nuevas tareas
+### Seleccionar tareas realizadas
+### Editar tareas
+### Eliminar tareas realizadas 
 
 
 # Ventajas 
