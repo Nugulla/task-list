@@ -1,0 +1,43 @@
+//Agregar tareas 
+import React from 'react';
+import { Input } from '@chakra-ui/react'
+import { useForm } from '../hooks/useForm';
+import { Button } from '@chakra-ui/react'
+
+export const TodoAdd = ({ handleNewTodo }) => {
+	const { description, onInputChange, onResetForm } = useForm({
+		description: '',
+	});
+
+	const onFormSubmit = e => {
+		e.preventDefault();
+
+		if (description.length <= 1) return;
+
+		let newTodo = {
+			id: new Date().getTime(),
+			description: description,
+			done: false,
+		};
+
+		handleNewTodo(newTodo);
+		onResetForm();
+	};
+
+	return (
+		<form onSubmit={onFormSubmit}>
+			<Input variant= 'outline' placeholder='Agregar Tarea'
+				type='text'
+				// // className='input-add'
+				name='description'
+			    value={description}
+				onChange={onInputChange}
+				// placeholder='Añadir tarea'
+			/>
+			<Button colorScheme='red' type='submit'>Agregar</Button>
+			{/* <button className='btn-add' type='submit'>
+				Agregar
+			</button> */}
+		</form>
+	);
+};
