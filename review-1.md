@@ -10,8 +10,8 @@ Mi producto sirve para ayudar a los usuarios a llevar un control de la lista de 
 
 
 # Ventajas 
-Es una aplicación amigable y facil de usar 
-Ayuda a llevar un mejor control de las tareas diarias
+### Es una aplicación amigable y facil de usar 
+### Ayuda a llevar un mejor control de las tareas diarias
 
 
 
